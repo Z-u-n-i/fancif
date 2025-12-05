@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fancify My Text</title>
+</head>
+<body>
+    <h1>Fancify My Text</h1>
+
+    <!-- Text area box -->
+    <fieldset>
+        <legend>Text</legend>
+        <textarea id="textArea" rows="4" cols="30"></textarea>
+    </fieldset>
+
+    <!-- Controls -->
+    <fieldset>
+        <legend>Fancify</legend>
+
+        <!-- Bigger button -->
+        <button type="button" onclick="makeBigger()">Bigger!</button>
+        <br><br>
+
+        <!-- Fancy / Boring radios -->
+        <input type="radio" id="fancy" name="style" value="fancy" onchange="setFancy()">
+        <label for="fancy">FancyShmancy</label>
+        <br>
+
+        <input type="radio" id="boring" name="style" value="boring" onchange="setBoring()">
+        <label for="boring">BoringBetty</label>
+        <br><br>
+
+        <!-- Moo button -->
+        <button type="button" onclick="moo()">Moo</button>
+    </fieldset>
+
+    <!-- Link to your JS file -->
+    <script src="fancifymytext.js"></script>
+</body>
+</html>
